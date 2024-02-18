@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java.javaDebug",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "com.example.MainClass",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "java.javaDebug",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "hadoop.mapreduce.Main",
+      "projectName": "wordcount",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "type": "java.javaDebug",
+      "name": "WordCount",
+      "request": "launch",
+      "mainClass": "hadoop.mapreduce.tp1.WordCount",
+      "projectName": "wordcount",
+      "args": [
+        "src/main/resources/input/file.txt",
+        "src/main/resources/output"
+      ],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
